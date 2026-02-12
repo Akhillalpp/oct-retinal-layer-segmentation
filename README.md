@@ -1,6 +1,6 @@
 # OCT Retinal Layer Segmentation
 
-Deep learning–based retinal layer segmentation on Optical Coherence Tomography (OCT) images using advanced encoder–decoder architectures and composite loss engineering.
+Deep learning based retinal layer segmentation on Optical Coherence Tomography (OCT) images using advanced encoder–decoder architectures and composite loss engineering.
 
 ---
 
@@ -32,7 +32,6 @@ The work evaluates multiple architectures and compares them against state-of-the
 - Compared against:
   - U-Net
   - Y-Net
-  - GD-Net (state-of-the-art baseline)
 
 ---
 
@@ -63,8 +62,6 @@ Modifications include:
 - HEG Dataset
 - Peripapillary OCT Dataset
 
-*(Datasets are not included due to licensing restrictions.)*
-
 ---
 
 ## 🛠️ Tech Stack
@@ -77,7 +74,7 @@ Modifications include:
 - Matplotlib
 
 ---
-
+<!--
 ## 📂 Project Structure
 
 ├── data/
@@ -91,12 +88,11 @@ Modifications include:
 
 
 ---
-
+-->
 ## 🔍 Results
 
 The tuned MultiResUNet model achieved competitive performance compared to state-of-the-art architectures, particularly improving boundary delineation and class-wise balanced accuracy.
 
-Detailed quantitative results and visual comparisons are included in the `results/` directory.
 
 ---
 
@@ -108,7 +104,7 @@ Detailed quantitative results and visual comparisons are included in the `result
 - Domain adaptation across OCT devices
 
 ---
-
+<!--
 ## 🤝 Contributions
 
 Open to collaboration in:
@@ -117,6 +113,7 @@ Open to collaboration in:
 - Clinical AI Applications
 
 ---
+-->
 
 ## 📫 Contact
 
