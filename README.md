@@ -116,9 +116,9 @@ The model uses a composite loss combining region and contour supervision:
 
 [1] J. E. Kim, *Exploring neovascular AMD and DME*, 2022.  
 [2] P. Romero-Aroca, *Targeting DME pathophysiology*, 2010.  
-[3] **U-Net** – Ronneberger et al., 2015.  
-[4] **MultiResUNet** – Ibtehaz et al., 2020.  
+[3] U-Net – Ronneberger et al., 2015.  
+[4] MultiResUNet – Ibtehaz et al., 2020.  
 [5] Duke DME Dataset – Chiu et al., 2015.  
 [6] Peripapillary Dataset – Li et al., 2021.  
-[7] **Y-Net** – Farshad et al., 2022.  
-[8] **LightReSeg** – He et al., 2024.  
+[7] Y-Net – Farshad et al., 2022.  
+[8] LightReSeg – He et al., 2024.  
