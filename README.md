@@ -62,10 +62,10 @@ In this work, we evaluate and enhance the performance of **MultiResUNet**, an ex
 The model uses a composite loss combining region and contour supervision:
 
 ### Total Loss: 
-<img src="images/eq1.PNG" width="300">
+<img src="images/eq1.PNG" width="250">
 
 ### Region Loss: 
-<img src="images/eq2.PNG" width="300">
+<img src="images/eq2.PNG" width="250">
 
 ### Contour Loss: 
 <img src="images/eq3.PNG" width="300">
