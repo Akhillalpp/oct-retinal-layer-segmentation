@@ -1,8 +1,8 @@
-# AN EFFICIENT LIGHTWEIGHT U-NET ARCHITECTURE FOR RETINAL LAYER SEGMENTATION IN OCT IMAGES
+# An Efficient Lightweight U-Net Architecture For Retinal Layer Segmentation In OCT Images
 
 **Akhil Lal P.P., Deepthi V.R., Dr. Sudeep P.V., Dr. Sreelekha G.**  
 National Institute of Technology Calicut  
-📌 Presented as a Poster at AIML Systems Conference  
+📌 Presented at AIML Systems Conference 2025 
 
 ---
 
