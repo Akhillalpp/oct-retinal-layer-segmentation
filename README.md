@@ -58,3 +58,74 @@ In this work, we evaluate and enhance the performance of **MultiResUNet**, an ex
 The model uses a composite loss combining region and contour supervision:
 
 ### Total Loss: L_total = β1 * L_region + β2 * L_contour
+
+### Region Loss: L_region = λ1 * Dice Loss + λ2 * Cross Entropy Loss + λ3 * Focal Frequency Loss
+
+### Contour Loss: L_contour = - (1/σ) Σ [l_contour(i) * log(p_contour(i))]
+
+- Enhances boundary precision using edge-aware supervision
+
+## 📊 Results
+
+### 🔍 Qualitative Results
+
+- Segmentation performed on:
+  - Duke DME dataset
+  - Peripapillary dataset
+
+📌 (Add images in `/images` folder and link here)
+
+/images/results.png
+/images/duke_sample.png
+/images/peripapillary_sample.png
+
+### ⏱️ Inference Time
+
+| Model          | Duke DME (ms) | Peripapillary (ms) |
+|----------------|--------------|--------------------|
+| Y-Net          | 32.98        | 32.96              |
+| MultiResUNet   | 63.61        | 63.68              |
+| U-Net          | 59.44        | 59.42              |
+
+
+### 📈 Model Complexity vs Performance
+
+- Analysis performed on:
+  - Model size vs Mean Dice Score
+
+📌 (Add plots in `/images`)
+
+/images/duke_plot.png
+/images/peri_plot.png
+
+
+## ✅ Conclusion
+
+- Achieved highest:
+  - Mean Dice Score
+  - Pixel Accuracy
+  - Balanced Accuracy
+
+- Improvements:
+  - **43.4% fewer parameters than U-Net**
+  - Dice improvement:
+    - +1.77% (Duke DME)
+    - +0.37% (Peripapillary)
+
+- Compared to LightReSeg:
+  - Higher segmentation performance
+
+- Final Outcome:
+  - Efficient balance between accuracy and computational complexity
+  - Suitable for clinical and real-time applications
+
+---
+
+## 📚 References
+
+- U-Net (Ronneberger et al.)
+- MultiResUNet (Ibtehaz et al.)
+- Y-Net
+- LightReSeg
+- Duke DME Dataset
+- Peripapillary Dataset
