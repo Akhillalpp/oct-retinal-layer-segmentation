@@ -42,16 +42,18 @@ In this work, we evaluate and enhance the performance of **MultiResUNet**, an ex
  
 <img src="images/multiresunet.PNG" width="900">
 
-### Architecture Highlights:
+### Key Components
 
-- **MultiRes Blocks**:
-  - Capture multi-scale features
-  - Use stacked 3×3 convolutions to approximate larger receptive fields
-- **ResPaths**:
-  - Reduce semantic gap between encoder and decoder
-- **Scaling Parameter (α)**:
-  - Controls number of filters
-  - Tuned for optimal performance
+- **MultiRes Blocks**  
+  - Enable multi-scale feature extraction  
+  - Use three successive 3×3 convolutions to approximate larger receptive fields  
+
+- **ResPaths**  
+  - Reduce semantic gap between encoder and decoder  
+  - Improve feature fusion compared to standard U-Net  
+
+- **Filter Scaling Parameter (α)**  
+  - Controls number of filters in MultiRes block
 
 ---
 
