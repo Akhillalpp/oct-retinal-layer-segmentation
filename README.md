@@ -40,7 +40,7 @@ In this work, we evaluate and enhance the performance of **MultiResUNet**, an ex
   - Multi-scale feature extraction
   - Reduced semantic gap
  
-<img src="images/multiresunet.PNG" width="600">
+<img src="images/multiresunet.PNG" width="900">
 
 ### Architecture Highlights:
 
@@ -85,10 +85,10 @@ The model uses a composite loss combining region and contour supervision:
 ### 📈 Model Complexity vs Performance
 
 - Analysis performed on Duke dataset:
-<img src="images/duke_complexity.PNG" width="600">
+<img src="images/duke_complexity.PNG" width="400">
 
 - Analysis performed on Peripapillary dataset
-<img src="images/peri_complexity.PNG" width="600">
+<img src="images/peri_complexity.PNG" width="400">
 
 ## ✅ Conclusion
 
