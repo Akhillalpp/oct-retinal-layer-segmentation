@@ -39,6 +39,8 @@ In this work, we evaluate and enhance the performance of **MultiResUNet**, an ex
 - Adopted MultiResUNet for retinal layer segmentation due to its effectiveness in:
   - Multi-scale feature extraction
   - Reduced semantic gap
+ 
+<img src="images/multiresunet.PNG" width="600">
 
 ### Architecture Highlights:
 
@@ -82,14 +84,11 @@ The model uses a composite loss combining region and contour supervision:
 
 ### 📈 Model Complexity vs Performance
 
-- Analysis performed on:
-  - Model size vs Mean Dice Score
+- Analysis performed on Duke dataset:
+<img src="images/duke_complexity.PNG" width="600">
 
-📌 (Add plots in `/images`)
-
-/images/duke_plot.png
-/images/peri_plot.png
-
+- Analysis performed on Peripapillary dataset
+<img src="images/peri_complexity.PNG" width="600">
 
 ## ✅ Conclusion
 
