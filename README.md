@@ -84,10 +84,10 @@ The model uses a composite loss combining region and contour supervision:
 
 ### 📈 Model Complexity vs Performance
 
-- Analysis performed on Duke dataset:
+- Duke dataset:
 <img src="images/duke_complexity.PNG" width="400">
 
-- Analysis performed on Peripapillary dataset
+- Peripapillary dataset
 <img src="images/peri_complexity.PNG" width="400">
 
 ## ✅ Conclusion
