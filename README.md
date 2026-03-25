@@ -75,7 +75,7 @@ The model uses a composite loss combining region and contour supervision:
 
 📌 (Add images in `/images` folder and link here)
 
-/images/results.png
+![Results](images/results.png)
 /images/duke_sample.png
 /images/peripapillary_sample.png
 
