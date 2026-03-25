@@ -59,13 +59,14 @@ In this work, we evaluate and enhance the performance of **MultiResUNet**, an ex
 
 The model uses a composite loss combining region and contour supervision:
 
-### Total Loss: L_total = β1 * L_region + β2 * L_contour
+### Total Loss: 
+<img src="images/eq1.PNG" width="600">
 
-### Region Loss: L_region = λ1 * Dice Loss + λ2 * Cross Entropy Loss + λ3 * Focal Frequency Loss
+### Region Loss: 
+<img src="images/eq2.PNG" width="600">
 
-### Contour Loss: L_contour = - (1/σ) Σ [l_contour(i) * log(p_contour(i))]
-
-- Enhances boundary precision using edge-aware supervision
+### Contour Loss: 
+<img src="images/eq3.PNG" width="600">
 
 ## 📊 Results
 
