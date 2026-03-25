@@ -69,15 +69,7 @@ The model uses a composite loss combining region and contour supervision:
 
 ### 🔍 Qualitative Results
 
-- Segmentation performed on:
-  - Duke DME dataset
-  - Peripapillary dataset
-
-📌 (Add images in `/images` folder and link here)
-
 <img src="images/q_result.PNG" width="600">
-/images/duke_sample.png
-/images/peripapillary_sample.png
 
 ### ⏱️ Inference Time
 
