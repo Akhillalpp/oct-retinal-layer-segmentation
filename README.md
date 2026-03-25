@@ -90,25 +90,18 @@ The model uses a composite loss combining region and contour supervision:
 - Peripapillary dataset
 <img src="images/peri_complexity.PNG" width="400">
 
+
 ## ✅ Conclusion
 
-- Achieved highest:
-  - Mean Dice Score
-  - Pixel Accuracy
-  - Balanced Accuracy
+- The proposed model achieved the highest mean Dice score, pixel accuracy, and balanced accuracy when compared to other methods such as U-Net and Y-Net.
 
-- Improvements:
-  - **43.4% fewer parameters than U-Net**
-  - Dice improvement:
-    - +1.77% (Duke DME)
-    - +0.37% (Peripapillary)
+- Our model uses **43.4% fewer parameters than U-Net** and improves Dice scores by:
+  - **+1.77%** on the Duke DME dataset  
+  - **+0.37%** on the Peripapillary dataset  
 
-- Compared to LightReSeg:
-  - Higher segmentation performance
+- Although the proposed model is more complex than the lightweight model LightReSeg, its segmentation performance is significantly higher.
 
-- Final Outcome:
-  - Efficient balance between accuracy and computational complexity
-  - Suitable for clinical and real-time applications
+- This MultiResUNet variant achieves an effective balance between accuracy and computational efficiency, making it a promising solution for retinal OCT layer segmentation in clinical environments.
 
 ---
 
