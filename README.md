@@ -1,125 +1,60 @@
-# OCT Retinal Layer Segmentation
+# AN EFFICIENT LIGHTWEIGHT U-NET ARCHITECTURE FOR RETINAL LAYER SEGMENTATION IN OCT IMAGES
 
-Deep learning based retinal layer segmentation on Optical Coherence Tomography (OCT) images using advanced encoder–decoder architectures and composite loss engineering.
-
----
-
-## 🧠 Overview
-
-This project focuses on accurate multi-class retinal layer segmentation in OCT B-scan images.  
-The objective is to improve boundary delineation and class-wise performance using architecture tuning and hybrid loss functions.
-
-The work evaluates multiple architectures and compares them against state-of-the-art baselines across different OCT datasets.
+**Akhil Lal P.P., Deepthi V.R., Dr. Sudeep P.V., Dr. Sreelekha G.**  
+National Institute of Technology Calicut  
+📌 Presented as a Poster at AIML Systems Conference  
 
 ---
 
-## 🚀 Key Highlights
+## 🧠 Introduction
 
-- Implemented and tuned **MultiResUNet** for OCT segmentation
-- Designed a **composite loss function** combining:
-  - Dice Loss
-  - Cross-Entropy Loss
-  - Focal Frequency Loss
-  - Boundary Loss
-- Evaluated performance using:
-  - Dice Score
-  - Pixel Accuracy
-  - Balanced Accuracy
-- Conducted cross-dataset evaluation on:
-  - Duke OCT
-  - HEG Dataset
-  - Peripapillary OCT Dataset
-- Compared against:
+- Retinal diseases such as Age-related Macular Degeneration (AMD), Diabetic Macular Edema (DME), among others, cause pathological changes in retinal layers, serving as biomarkers for diagnosis and monitoring.
+- High-resolution OCT images enable retinal layer analysis, but manual evaluation is time-consuming, subjective, and impractical at scale.
+- Deep learning models, including U-Net and its extensions, provide automated segmentation critical for accurate diagnosis.
+- Portable and handheld OCT devices for point-of-care screening and teleophthalmology demand lightweight, efficient, and robust models that perform well across diverse imaging conditions.
+
+---
+
+## 💡 Our Contribution
+
+In this work, we evaluate and enhance the performance of **MultiResUNet**, an extension of U-Net for automated segmentation of retinal layers and fluid regions in SD-OCT images using the Duke DME and Peripapillary datasets.
+
+### Key Contributions:
+
+- Extended MultiResUNet for the first time in retinal OCT layer segmentation with task-specific optimization.
+- Tuned the filter scaling parameter (**α**) to enhance performance.
+- Integrated a composite loss function combining region-based and contour-based terms.
+- Performed comprehensive comparison with:
   - U-Net
   - Y-Net
+  - LightReSeg
+- Evaluated on:
+  - Duke DME dataset
+  - Peripapillary dataset
 
 ---
 
-## 🏗️ Model Architecture
+## ⚙️ Proposed Methodology
 
-The primary architecture used in this project is **MultiResUNet**, adapted and tuned for retinal OCT segmentation tasks.
+- Adopted MultiResUNet for retinal layer segmentation due to its effectiveness in:
+  - Multi-scale feature extraction
+  - Reduced semantic gap
 
-Modifications include:
-- Alpha scaling optimization for MultiRes blocks
-- Custom composite loss integration
-- Boundary-aware supervision
+### Architecture Highlights:
 
----
-
-## 📊 Evaluation Metrics
-
-| Metric | Purpose |
-|--------|----------|
-| Dice Score | Overlap measurement |
-| Pixel Accuracy | Overall classification accuracy |
-| Balanced Accuracy | Class imbalance handling |
+- **MultiRes Blocks**:
+  - Capture multi-scale features
+  - Use stacked 3×3 convolutions to approximate larger receptive fields
+- **ResPaths**:
+  - Reduce semantic gap between encoder and decoder
+- **Scaling Parameter (α)**:
+  - Controls number of filters
+  - Tuned for optimal performance
 
 ---
 
-## 🧪 Datasets
+## 🧪 Loss Function
 
-- Duke OCT Dataset
-- HEG Dataset
-- Peripapillary OCT Dataset
+The model uses a composite loss combining region and contour supervision:
 
----
-
-## 🛠️ Tech Stack
-
-- Python
-- PyTorch
-- OpenCV
-- NumPy
-- Albumentations
-- Matplotlib
-
----
-<!--
-## 📂 Project Structure
-
-├── data/
-├── models/
-├── losses/
-├── training/
-├── evaluation/
-├── configs/
-└── main.py
-
-
-
----
--->
-## 🔍 Results
-
-The tuned MultiResUNet model achieved competitive performance compared to state-of-the-art architectures, particularly improving boundary delineation and class-wise balanced accuracy.
-
-
----
-
-## 🎯 Future Work
-
-- Transformer-based segmentation models
-- Self-supervised pretraining
-- Real-time clinical deployment optimization
-- Domain adaptation across OCT devices
-
----
-<!--
-## 🤝 Contributions
-
-Open to collaboration in:
-- Medical Image Segmentation
-- Loss Function Engineering
-- Clinical AI Applications
-
----
--->
-
-## 📫 Contact
-
-Akhil Lal  
-M.Tech Signal Processing  
-LinkedIn: linkedin.com/in/akhillal
-
----
-
+### Total Loss: L_total = β1 * L_region + β2 * L_contour
