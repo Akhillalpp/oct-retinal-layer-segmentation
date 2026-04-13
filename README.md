@@ -2,7 +2,7 @@
 
 **Akhil Lal P.P., Deepthi V.R., Dr. Sudeep P.V., Dr. Sreelekha G.**  
 National Institute of Technology Calicut  
-📌 Presented at AIML Systems Conference 2025 
+📌 Presented at AIML Systems Conference 2025 🔗 https://doi.org/10.1109/AIMLSystems67835.2025.11330423
 
 ---
 
